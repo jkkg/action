@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+<div style="width: 700px; margin: 0 auto">
+    <h1>Добавление нового товара</h1>
+    <form action="/admin/products/create" method="post">
+        <label for="title">Название</label><br>
+        <input type="text" name="title" id="title"><br>
+        <label for="view">Вид</label><br>
+        <input type="text" name="view" id="view"><br>
+        <label for="tagline">Слоган</label><br>
+        <input type="text" name="tagline" id="tagline"><br>
+        <label for="description">Описание</label><br>
+        <input type="text" name="description" id="description"><br>
+        <label for="winner_quantity">Количество</label><br>
+        <input type="text" name="winner_quantity" id="winner_quantity"><br>
+        <label for="value">Цена</label><br>
+        <input type="text" name="value" id="value"><br>
+        <label for="discount">Скидка</label><br>
+        <input type="text" name="discount" id="discount"><br>
+        <label for="text">Текст</label><br>
+        <input type="text" name="text" id="text"><br>
+        <label for="question">Вопросы</label><br>
+        <input type="text" name="question" id="question"><br>
+        <label for="event_start">Дата начала</label><br>
+        <input type="text" name="event_start" id="event_start"><br>
+        <label for="event_end">Дата окончания</label><br>
+        <input type="text" name="event_end" id="event_end"><br>
+        <input type="submit">
+    </form>
+</div>
+
+</body>
+</html>

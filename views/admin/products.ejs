@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+<div style="width: 700px; margin: 0 auto">
+    <h1>Товары</h1>
+    <ul>
+        <% products.forEach(function(product) { %>
+        <li><%= product.title %>
+            <a href="/admin/products/show/+<%=product.id%>">Показать</a>
+            <input type="submit" value="Редактировать">
+            <input type="submit" value="Удалить">
+        </li>
+
+        <% }); %>
+    </ul>
+</div>
+
+</body>
+</html>
